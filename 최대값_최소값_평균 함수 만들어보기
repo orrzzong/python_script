@@ -1,0 +1,23 @@
+def MmR(listAb):
+    
+# listAb = [5,1,6,8,4,9,7,3,2,1,1,1,1,1,9,9,9,9,9,9]
+    # 최대값 구하기
+    max_Val = max(listAb)
+    #최소값 구하기
+    min_Val = min(listAb)
+    # 최대값 개수
+    list_max = listAb.count(max_Val)
+    # 최소값 개수
+    list_min = listAb.count(min_Val)
+    # for문_remove
+    for i in range (0,list_min):
+        listAb.remove(min_Val)
+
+    for i in range (0,list_max):
+        listAb.remove(max_Val)
+
+    avg = sum(listAb)/len(listAb)
+    print(avg)
+    
+listbc = [5,1,6,8,4,9,7,3,2,1,1,1,1,1,9,9,9,9,9,9]   
+MmR(listbc)
